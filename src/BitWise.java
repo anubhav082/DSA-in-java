@@ -1,18 +1,18 @@
 public class BitWise {
-    public int divideBy2(int x) {
-        return x >> 1;
+    public int divby2(int x) {
+        return x >> 1; // returning the value
 
     }
 
-    public int multiplyBy2(int x) {
-        return x << 1;
+    public int multBy2(int x) {
+        return x << 1; 
     }
 
     public int log2(int x) {
-        int res = 0;
+        int count = 0;
         while ((x >>= 1) != 0)
-            res++;
+            count++; // storing the value 
 
-        return res;
+        return count;
     }
 }
