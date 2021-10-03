@@ -43,13 +43,13 @@ public class MergeSort
                 j++;
             }
         }
-        while(i<l1)
+        while(i<l1) // comparing the values
         {
             arr[k] = arr1[i];
             i++;
             k++;
         }
-        while(j<l2)
+        while(j<l2) //comparing the values
         {
             arr[k] = arr2[j];
             j++;
