@@ -41,8 +41,8 @@ public class LinkedList<Item> {
 
     public void insertAtPosition(Item item, int pos) {
         if(pos>N){
-            System.out.println("LL Overflow");
-            return;
+            System.out.println("LL overflew");
+            return; // returning the value
         }
         Node temp = head;
         for(int i = 0;i<pos;i++){
@@ -53,6 +53,7 @@ public class LinkedList<Item> {
         x.next = temp.next;
         temp.next = x;
     }
+    // deleting first element of function 
 
     public void deleteFirst(){
         head = head.next;
@@ -65,7 +66,7 @@ public class LinkedList<Item> {
         }
         temp.next = null;
     }
-
+// creating the node
     public class Node {
         Item item;
         Node next;
