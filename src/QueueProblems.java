@@ -5,7 +5,7 @@ public class QueueProblems {
     Scanner sc = new Scanner(System.in);
     Deque<Integer> queue = new LinkedList<>();
 
-
+// creating a function for problem 01
     public void problem1() {
         //reversing a Queue
         System.out.println("problem 1:reversing a Queue");
@@ -22,7 +22,7 @@ public class QueueProblems {
             System.out.print(i + " ");
         }
     }
-
+// creating the function for problem 04
     public void problem4() {
         //Maximum sum in sliding window
         System.out.println("problem 2: Maximum sum in sliding window");
@@ -35,17 +35,17 @@ public class QueueProblems {
         }
         System.out.println("Enter window Size : ");
         int w = sc.nextInt();
-        int sum = 0;
+        int s = 0;
         for (int i = 0; i < w; i++) {
-            sum += array[i];
+            s += array[i];
             queue.addLast(array[i]);
         }
-        int max = sum;
+        int max = s;
         for (int i = w; i < n; i++) {
             sum += array[i];
             queue.addLast(array[i]);
-            sum -= queue.removeFirst();
-            max = Math.max(sum, max);
+            s -= queue.removeFirst();
+            max = Math.max(s, max);
         }
 
         System.out.println(max);
